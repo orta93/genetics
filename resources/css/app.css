@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Amonos;
+    src: url("./../../public/fonts/amonosdisplay-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Dreams;
+    src: url("./../../public/fonts/dreams.ttf") format("truetype");
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #259CD7;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #050505;
+}
