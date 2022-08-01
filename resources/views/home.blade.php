@@ -22,19 +22,19 @@
                 'title' => 'Mantenerse saludable',
                 'icon' => 'Size_80px__17_.svg',
                 'description' => 'Obtenga lo que necesita para desarrollar un plan de salud personalizado para enfermedades cardíacas, cáncer y más.',
-                'link' => '#'
+                'link' => route('saludable')
             ],
             [
                 'title' => 'Cancer',
                 'icon' => 'icon-financial-assistance-duotone.svg',
                 'description' => 'Comprenda sus genes para que usted y su médico puedan encontrar los tratamientos más efectivos.',
-                'link' => '#'
+                'link' => route('cancer')
             ],
             [
                 'title' => 'Enfermedades Genéticas',
                 'icon' => 'Size_80px__5_.svg',
                 'description' => 'Encuentre un diagnóstico o comprenda si una afección es hereditaria para que pueda concentrarse en el tratamiento adecuado.',
-                'link' => '#'
+                'link' => route('enfermedades')
             ]
         ];
     @endphp
@@ -56,7 +56,7 @@
     <div class="w-full py-16 bg-blue-primary text-white">
         <div class="container text-center flex flex-col gap-4 font-bold">
             <p class="uppercase text-xl">Más de</p>
-            <p class="font-bold text-5xl">{{ $patients }}</p>
+            <counter :value="{{ $patients }}" class="font-bold text-5xl"></counter>
             <p class="text-xl">pacientes y provedores</p>
         </div>
     </div>
@@ -65,15 +65,11 @@
         $mouse_options = [
             [
                 'title' => 'Los expertos en pruebas confían',
-                'content' => env('APP_NAME').' cuenta con la confianza de médicos de todo el mundo. Nuestros laboratorios están equipados con tecnología de punta y cuentan con algunos de los mejores expertos en genética del mundo.',
-                'link' => [
-                    'content' => 'Conoce al equipo',
-                    'href' => '#'
-                ]
+                'content' => [env('APP_NAME').' cuenta con la confianza de médicos de todo el mundo. Nuestros laboratorios están equipados con tecnología de punta y cuentan con algunos de los mejores expertos en genética del mundo.'],
             ],
             [
                 'title' => 'Precios asequibles',
-                'content' => 'Para muchas personas, el seguro cubre el costo de las pruebas. '.env('APP_NAME').' también ofrece precios fijos de pago por cuenta propia e incluso asistencia financiera para aquellos que califiquen.',
+                'content' => ['Para muchas personas, el seguro cubre el costo de las pruebas. '.env('APP_NAME').' también ofrece precios fijos de pago por cuenta propia e incluso asistencia financiera para aquellos que califiquen.'],
                 'link' => [
                     'content' => 'Ver Opciones',
                     'href' => '#'
@@ -81,7 +77,7 @@
             ],
             [
                 'title' => 'Más que una prueba',
-                'content' => 'Los resultados genéticos a menudo son solo el comienzo. El portal educativo interactivo de '.env('APP_NAME').' y los atentos asesores genéticos pueden ayudarlo a comprender sus resultados y qué hacer a continuación.',
+                'content' => ['Los resultados genéticos a menudo son solo el comienzo. El portal educativo interactivo de '.env('APP_NAME').' y los atentos asesores genéticos pueden ayudarlo a comprender sus resultados y qué hacer a continuación.'],
                 'link' => [
                     'content' => '¿Tiene preguntas?',
                     'href' => '#'
@@ -89,7 +85,7 @@
             ],
             [
                 'title' => 'Usted tiene el control',
-                'content' => 'En '.env('APP_NAME').', respetamos tu privacidad. Usted posee y controla su información genética, y le brindamos las herramientas para protegerla.',
+                'content' => ['En '.env('APP_NAME').', respetamos tu privacidad. Usted posee y controla su información genética, y le brindamos las herramientas para protegerla.'],
                 'link' => [
                     'content' => 'Saber más',
                     'href' => '#'
@@ -129,7 +125,7 @@
             <p class="font-bold text-3xl">¿Cómo funciona?</p>
         </div>
 
-        @include('partials.steps', ['cards' => $steps])
+        @include('partials.steps', ['steps' => $steps])
     </div>
 
     <div class="w-full bg-blue-primary text-white">

@@ -7,8 +7,8 @@
         </div>
         <div class="w-full" v-if="selectedItem !== null">
             <div class="bg-blue-primary rounded text-white flex flex-col gap-4 p-8">
-                <p>{{ selectedItem.content }}</p>
-                <p><a class="underline" :href="selectedItem.link.href">{{ selectedItem.link.content }}</a></p>
+                <p v-for="content in selectedItem.content">{{ content }}</p>
+                <p v-if="selectedItem.link !== undefined"><a class="underline" :href="selectedItem.link.href">{{ selectedItem.link.content }}</a></p>
             </div>
         </div>
     </div>

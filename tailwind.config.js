@@ -12,6 +12,8 @@ module.exports = {
         'blue-landing': '#194066',
         'red-primary': '#E83549',
         'brown-primary': '#aca1a9',
+        'brown-secondary': '#8d958e',
+        'brown-third': '#44433c',
         'black-primary': '#050505',
       },
       container: {
@@ -23,11 +25,11 @@ module.exports = {
       }
     },
   },
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
-  ],
+  /*content: [
+    "./resources/!**!/!*.blade.php",
+    "./resources/!**!/!*.js",
+    "./resources/!**!/!*.vue",
+  ],*/
   variants: {
     extend: {},
   },
