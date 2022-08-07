@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/test/create', function () {
+    $categories = \App\Models\Category::orderBy('name')->get();
+    return view('test_form', ['categories' => $categories]);
+});
+
+Route::post('/test/create', [TestController::class, 'store']);
 
 Route::group(['prefix' => 'embarazo'], function () {
     Route::get('/', function () {
