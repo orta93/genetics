@@ -20,15 +20,15 @@
             </div>
             <div class="flex flex-col gap-2">
                 <div class="font-bold">Tiempo de respuesta</div>
-                <input name="turnaround" class="border w-full p-4"/>
+                <input name="turnaround" class="border w-full p-4" value="10-21 días calendario (14 días en promedio)"/>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="font-bold">Muestra preferida</div>
-                <input name="preferred_specimen" class="border w-full p-4"/>
+                <input name="preferred_specimen" class="border w-full p-4" value="3 ml de sangre total en un tubo de EDTA de copa púrpura (K2EDTA o K3EDTA)"/>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="font-bold">Especímenes alternativos</div>
-                <input name="alternate_specimens" class="border w-full p-4"/>
+                <input name="alternate_specimens" class="border w-full p-4" value="Saliva, hisopo bucal, gDNA y biopsia por punción cutánea (fibroblastos)"/>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="font-bold">Categoria</div>
