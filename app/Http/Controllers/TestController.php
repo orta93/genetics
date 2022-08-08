@@ -15,7 +15,7 @@ class TestController extends Controller
 
         $disorders_str = $request->get('disorders_str');
         $disorders = collect(explode("\r\n", $disorders_str))->map(function ($disorder) {
-            return $this->replaceText($disorder);
+            return ucfirst($this->replaceText($disorder));
         })->toArray();
         $request['disorders'] = $disorders;
 
