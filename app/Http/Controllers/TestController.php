@@ -71,8 +71,7 @@ class TestController extends Controller
             'turnaround' => $request->get('turnaround'),
             'preferred_specimen' => $request->get('preferred_specimen'),
             'alternate_specimens' => $request->get('alternate_specimens'),
-            'genes' => $genes->toArray(),
-            'color' => $request->get('color')
+            'genes' => $genes->toArray()
         ]);
 
         return redirect()->to('/test/create');
