@@ -35,7 +35,7 @@
                 <select name="category_id" class="border w-full p-4">
                     <option value="">Selecciona</option>
                     @foreach($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}">{{ $category->slug }}</option>
                     @endforeach
                 </select>
             </div>

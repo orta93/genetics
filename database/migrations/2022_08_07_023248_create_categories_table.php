@@ -502,92 +502,92 @@ class CreateCategoriesTable extends Migration
             [
                 'name' => 'Pancreatitis crónica',
                 'slug' => 'pancreatitis-cronica',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Oncología pedriátrica',
                 'slug' => 'oncologia-pedriatrica',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Síndromes de crecimiento excesivo',
                 'slug' => 'sindromes-crecimiento-excesivo',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Convulsiones de epilepsia y anomalías cerebrales del desarrollo',
                 'slug' => 'convulsiones-epilepsia-anomalias-cerebrales-desarrollo',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Ciliopatías',
                 'slug' => 'ciliopatias',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'RASopatías (trastornos del espectro de Noonan)',
                 'slug' => 'rasopatias-trastornos-espectro-noonan',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Fibrosis quística',
                 'slug' => 'fibrosis-quistica',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos del desarrollo',
                 'slug' => 'trastornos-desarrollo',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos de la piel',
                 'slug' => 'trastornos-piel',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos oculares',
                 'slug' => 'trastornos-oculares',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Defectos cardíacos congénitos',
                 'slug' => 'defectos-cardiacos-congenitos',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Convulsiones de epilepsia y anomalías cerebrales del desarrollo',
                 'slug' => 'convulsiones-epilepsia-anomalias-cerebrales-desarrollo',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos esqueléticos',
                 'slug' => 'trastornos-esqueleticos',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos del neurodesarrollo',
                 'slug' => 'trastornos-neurodesarrollo',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos pulmonares',
                 'slug' => 'trastornos-pulmonares',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Sordera',
                 'slug' => 'sordera',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos renales',
                 'slug' => 'trastornos-renales',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Trastornos del tejido conectivo',
                 'slug' => 'trastornos-tejido-conectivo',
-                'parent_id' => 14
+                'parent_id' => 13
             ],
             [
                 'name' => 'Detección de portadores',

@@ -5,8 +5,8 @@
         'title' => 'Tu salud comienza en tus genes.',
         'subtitle' => env('APP_NAME').' facilita el acceso a su información genética única, para que pueda tomar el control de su salud.',
         'image' => '/images/hero-large.webp',
-        'link' => '#',
-        'linkLabel' => 'Saber mas'
+        'link' => route('catalogo'),
+        'linkLabel' => 'Catálogo de Pruebas'
     ])
 
 
@@ -19,7 +19,7 @@
                 'link' => route('embarazo')
             ],
             [
-                'title' => 'Mantenerse saludable',
+                'title' => 'Wellness',
                 'icon' => 'Size_80px__17_.svg',
                 'description' => 'Obtenga lo que necesita para desarrollar un plan de salud personalizado para enfermedades cardíacas, cáncer y más.',
                 'link' => route('saludable')
@@ -46,10 +46,6 @@
         </div>
 
         @include('partials.cards', ['cards' => $plans])
-
-        <div class="w-full text-center my-12 font-bold text-xl">
-            ¿Eres un proveedor de atención médica? Visite nuestro sitio de <a href="#" class="text-blue-primary font-bold">proveedores</a> para obtener más información.
-        </div>
     </div>
 
     @php $patients = 2000000; @endphp
@@ -70,26 +66,14 @@
             [
                 'title' => 'Precios asequibles',
                 'content' => ['Para muchas personas, el seguro cubre el costo de las pruebas. '.env('APP_NAME').' también ofrece precios fijos de pago por cuenta propia e incluso asistencia financiera para aquellos que califiquen.'],
-                'link' => [
-                    'content' => 'Ver Opciones',
-                    'href' => '#'
-                ]
             ],
             [
                 'title' => 'Más que una prueba',
                 'content' => ['Los resultados genéticos a menudo son solo el comienzo. El portal educativo interactivo de '.env('APP_NAME').' y los atentos asesores genéticos pueden ayudarlo a comprender sus resultados y qué hacer a continuación.'],
-                'link' => [
-                    'content' => '¿Tiene preguntas?',
-                    'href' => '#'
-                ]
             ],
             [
                 'title' => 'Usted tiene el control',
                 'content' => ['En '.env('APP_NAME').', respetamos tu privacidad. Usted posee y controla su información genética, y le brindamos las herramientas para protegerla.'],
-                'link' => [
-                    'content' => 'Saber más',
-                    'href' => '#'
-                ]
             ]
         ];
     @endphp
@@ -183,7 +167,7 @@
         <div class="w-3/4 md:w-1/2 mx-auto">
             <div class="font-bold text-3xl py-4 text-center border-b border-black">¿Tiene alguna pregunta?</div>
             <faq :items='@json($questions)'></faq>
-            <div class="py-4"><a class="underline" href="#">Ver todas las preguntas frecuentes</a></div>
+            {{--<div class="py-4"><a class="underline" href="#">Ver todas las preguntas frecuentes</a></div>--}}
         </div>
     </div>
 @endsection

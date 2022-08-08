@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -51,7 +52,7 @@ Route::group(['prefix' => 'embarazo'], function () {
     })->name('pruebas-diagnostico-prenatal');
 });
 
-Route::group(['prefix' => 'mantenerse-saludable'], function () {
+Route::group(['prefix' => 'wellness'], function () {
     Route::get('/', function () {
         return view('saludable.index');
     })->name('saludable');
@@ -103,4 +104,12 @@ Route::group(['prefix' => 'enfermedades-geneticas'], function () {
     Route::get('/porque-genes-importan', function () {
         return view('enfermedades.porque-genes-importan');
     })->name('enfermedades.porque-genes-importan');
+});
+
+Route::group(['prefix' => 'catalogo'], function () {
+    Route::get('/', [CatalogController::class, 'index'])->name('catalogo');
+
+    Route::get('/prueba/{test_code}', [CatalogController::class, 'test'])->name('catalogo.test');
+    Route::get('/{category_slug}', [CatalogController::class, 'category'])->name('catalogo.categoria');
+    Route::get('/{category_slug}/{subcategory_slug}', [CatalogController::class, 'subcategory'])->name('catalogo.categoria.sub');
 });
