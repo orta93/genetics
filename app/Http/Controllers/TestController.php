@@ -19,7 +19,7 @@ class TestController extends Controller
         })->toArray();
         $request['disorders'] = $disorders;
 
-        $first_panel_items = explode(', ', $request->get('first_panel'));
+        $first_panel_items = explode(',', str_replace(' ', '', $request->get('first_panel')));
         $first_panel_ids = collect();
         foreach($first_panel_items as $item) {
             $gene = Gene::firstOrCreate(['name' => strtolower($item)], ['display_name' => $item]);
@@ -33,7 +33,7 @@ class TestController extends Controller
         ]);
 
         if ($request->filled('second_panel_name') && $request->filled('second_panel')) {
-            $second_panel_items = explode(', ', $request->get('second_panel'));
+            $second_panel_items = explode(',', str_replace(' ', '', $request->get('second_panel')));
             $second_panel_ids = collect();
             foreach ($second_panel_items as $item) {
                 $gene = Gene::firstOrCreate(['name' => strtolower($item)], ['display_name' => $item]);
@@ -48,7 +48,7 @@ class TestController extends Controller
         }
 
         if ($request->filled('third_panel_name') && $request->filled('third_panel')) {
-            $third_panel_items = explode(', ', $request->get('third_panel'));
+            $third_panel_items = explode(',', str_replace(' ', '', $request->get('third_panel')));
             $third_panel_ids = collect();
             foreach ($third_panel_items as $item) {
                 $gene = Gene::firstOrCreate(['name' => strtolower($item)], ['display_name' => $item]);
