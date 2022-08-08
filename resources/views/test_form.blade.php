@@ -19,10 +19,6 @@
                 <input name="test_code" class="border w-full p-4"/>
             </div>
             <div class="flex flex-col gap-2">
-                <div class="font-bold">Color</div>
-                <input name="color" type="color" class="border w-full p-4"/>
-            </div>
-            <div class="flex flex-col gap-2">
                 <div class="font-bold">Tiempo de respuesta</div>
                 <input name="turnaround" class="border w-full p-4"/>
             </div>
