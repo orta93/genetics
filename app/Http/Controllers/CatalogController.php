@@ -11,7 +11,7 @@ class CatalogController extends Controller
 {
     public function index()
     {
-        $categories = Category::whereNull('parent_id')->where('section', 1)->get();
+        $categories = Category::whereNull('parent_id')->where('section', 1)->where('active', true)->get();
         return view('catalog.index')->with(['categories' => $categories]);
     }
 
