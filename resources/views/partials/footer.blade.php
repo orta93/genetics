@@ -7,7 +7,7 @@
                     Para más información o dudas acerca de nuestros servicios, nos ponemos a su disposición de Lunes a Domingo de 8:00 a 16:00 horas en los siguientes medios de contacto.
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex flex-row gap-12">
+            <div class="w-full md:w-1/2 flex flex-col md:flex-row gap-12">
                 <div class="flex flex-col">
                     <div class="font-bold">NUEVO LEÓN</div>
                     <div class="flex gap-2">
