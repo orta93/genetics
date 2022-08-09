@@ -25,6 +25,7 @@ Route::get('/test/create', function () {
 });
 
 Route::post('/test/create', [TestController::class, 'store']);
+Route::get('/test/fix', [TestController::class, 'fix']);
 
 Route::group(['prefix' => 'embarazo'], function () {
     Route::get('/', function () {

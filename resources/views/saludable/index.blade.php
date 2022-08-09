@@ -3,16 +3,16 @@
 @section('content')
     @include('partials.landing', [
         'title' => 'Estar sano significa estar informado',
-        'image' => '/images/journey-healthy.webp',
-        'bg' => 'bg-brown-secondary',
-        'color' => 'text-white',
+        'image' => '/images/BANNER_WELLNESS_.jpg',
+        'bg' => 'bg-white',
+        'color' => 'text-black',
         'resize' => true,
         'reverse' => true
     ])
 
     @include('partials.image-container', [
         'title' => 'Agregue a su kit de herramientas de salud',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'reverse' => true,
         'items' => [
             'Al igual que usar protector solar o controlar su presión arterial en el médico, las pruebas genéticas son otra herramienta importante para ayudar a controlar su salud y estilo de vida.',
@@ -51,15 +51,14 @@
     @include('partials.landing', [
         'title' => '1 de cada 6',
         'subtitle' => 'Los adultos sanos tienen un mayor riesgo de una afección de salud grave debido a su genética, y probablemente no lo sepan.',
-        'image' => '/images/31-t-iffany-7440-1_3x.webp',
-        'bg' => 'bg-blue-landing',
-        'bgPosition' => 'bg-left-top',
-        'color' => 'text-white',
+        'image' => '/images/BANNER_1-DE-CADA-6_.jpg',
+        'bg' => 'bg-white',
+        'bgPosition' => 'bg-right-bottom',
+        'bgStyle' => 'background-color: #e6e9f0;',
+        'color' => 'text-black',
         'link' => route('saludable.porque-genes-importan'),
         'linkLabel' => '¿Por qué debería hacerme la prueba?',
-        'resize' => true,
-        'reverse' => true,
-        'self' => 'self-end'
+        'resize' => true
     ])
 
     @php
@@ -82,7 +81,7 @@
         ];
     @endphp
 
-    <div class="container py-8">
+    {{--<div class="container py-8">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">¿Cómo funcionan las pruebas?</p>
         </div>
@@ -92,12 +91,12 @@
         <div class="flex justify-center">
             <a href="{{ route('saludable.como-funcionan-pruebas') }}" class="btn">Cuéntame mas</a>
         </div>
-    </div>
+    </div>--}}
 
     <div class="w-full bg-gray-100">
         @include('partials.image-container', [
             'title' => 'Encuentre la prueba adecuada',
-            'image' => '/images/box-angle-viola.webp',
+            'image' => '/images/box-angle-viola.png',
             'items' => [
                 'Invitae ofrece 4 pruebas que pueden decirle si tiene un mayor riesgo de desarrollar cáncer, enfermedades cardíacas y otras afecciones crónicas, así como la forma en que los genes afectan su respuesta a los medicamentos.'
             ],

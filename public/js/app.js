@@ -2057,6 +2057,10 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     items: {
       type: Array
+    },
+    type: {
+      type: String,
+      "default": 'stories'
     }
   },
   computed: {}
@@ -2241,7 +2245,7 @@ var render = function render() {
       center: true,
       nav: false
     }
-  }, _vm._l(_vm.items, function (item, key) {
+  }, [_vm.type === "stories" ? _vm._l(_vm.items, function (item, key) {
     return _c("div", {
       key: key,
       staticClass: "container flex flex-col md:flex-row md:flex-reverse gap-4 mg:gap-8"
@@ -2259,7 +2263,29 @@ var render = function render() {
         src: "/images/" + item.img
       }
     })])]);
-  }), 0);
+  }) : _vm._e(), _vm._v(" "), _vm.type === "cards" ? _vm._l(_vm.items, function (card, key) {
+    return _c("a", {
+      key: key,
+      staticClass: "flex flex-col gap-2 w-full cursor-pointer",
+      attrs: {
+        href: card.link ? card.link : "#"
+      }
+    }, [_c("div", {
+      staticClass: "w-full sm:w-1/3 md:w-full text-center py-5 md:py-12",
+      "class": card.bgColor ? card.bgColor : ""
+    }, [_c("img", {
+      staticClass: "mx-auto",
+      attrs: {
+        src: "/icons/".concat(card.icon)
+      }
+    })]), _vm._v(" "), _c("div", {
+      staticClass: "w-full sm:w-2/3 md:w-full text-center sm:text-left md:text-center px-5 pb-5"
+    }, [_c("p", {
+      staticClass: "font-bold text-lg mb-2"
+    }, [_vm._v(_vm._s(card.title))]), _vm._v(" "), _c("p", {
+      staticClass: "font-light"
+    }, [_vm._v(_vm._s(card.description))])])]);
+  }) : _vm._e()], 2);
 };
 
 var staticRenderFns = [];

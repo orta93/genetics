@@ -53,7 +53,7 @@
         ];
     @endphp
 
-    <div class="w-full bg-gray-100">
+    {{--<div class="w-full bg-gray-100">
         <div class="container py-12">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">¿Listo para probar cómo su ADN afecta su respuesta a los medicamentos?</p>
@@ -61,7 +61,7 @@
 
             @include('partials.steps', ['steps' => $steps])
         </div>
-    </div>
+    </div>--}}
 
     <div class="container py-12 flex flex-col md:flex-row gap-x-16 gap-y-4">
         <div class="w-full flex flex-col gap-2">

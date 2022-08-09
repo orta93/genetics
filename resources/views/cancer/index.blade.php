@@ -3,9 +3,9 @@
 @section('content')
     @include('partials.landing', [
         'title' => 'Una poderosa herramienta para el cáncer',
-        'image' => '/images/21_Alvin_4327.webp',
-        'bg' => 'bg-brown-third',
-        'color' => 'text-white',
+        'image' => '/images/BANNER_CANCER_.jpg',
+        'bgStyle' => 'background-color:#d4e5df;',
+        'color' => 'text-black',
         'resize' => true,
         'reverse' => true
     ])
@@ -21,7 +21,7 @@
 
     @include('partials.image-container', [
         'title' => 'Pruebas genéticas y cáncer',
-        'image' => '/images/bitmap_3x.webp',
+        'image' => '/images/PRUEBAS_GENETICAS.png',
         'reverse' => true,
         'self' => 'self-end',
         'items' => [
@@ -34,10 +34,10 @@
         'title' => '1 de cada 8 pacientes',
         'title_alt' => 'con cáncer tiene una mutación genética transmitida a través de su familia',
         'subtitle' => 'Un tercio de los pacientes con mutaciones de alto riesgo podrían beneficiarse de un tratamiento diferente y más personalizado del cáncer después de las pruebas genéticas.',
-        'image' => '/images/03-jered-tim-0227_3x.webp',
-        'bg' => 'bg-blue-landing',
-        'bgPosition' => 'bg-right-top',
+        'image' => '/images/BANNER_1-DE-CADA-8_.jpg',
+        'bgPosition' => 'bg-right-bottom',
         'color' => 'text-white',
+        'bgStyle' => 'background-color: #02a8dc;',
         'link' => route('cancer.porque-genes-importan'),
         'linkLabel' => '¿Por qué debería hacerme la prueba?',
         'resize' => true,
@@ -63,7 +63,7 @@
         ];
     @endphp
 
-    <div class="w-full bg-gray-100">
+    {{--<div class="w-full bg-gray-100">
         <div class="container py-8">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">¿Cómo funcionan las pruebas?</p>
@@ -76,11 +76,11 @@
                 <a href="{{ route('cancer.como-funcionan-pruebas') }}" class="btn">Cuéntame mas</a>
             </div>
         </div>
-    </div>
+    </div>--}}
 
     @include('partials.image-container', [
         'title' => 'Encuentre la prueba adecuada',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'items' => [
             'Invitae ofrece una serie de pruebas centradas en tipos específicos de cáncer. Cada uno viene con los siguientes pasos claros, para que usted y su médico puedan tomar decisiones personalizadas para sus genes.'
         ],

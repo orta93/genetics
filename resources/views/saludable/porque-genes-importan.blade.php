@@ -44,7 +44,7 @@
         ];
     @endphp
 
-    <div class="w-full bg-gray-100">
+    {{--<div class="w-full bg-gray-100">
         <div class="container py-8">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">Las pruebas genéticas pueden decirle si podría beneficiarse de:</p>
@@ -53,7 +53,7 @@
 
             @include('partials.steps', ['steps' => $steps])
         </div>
-    </div>
+    </div>--}}
 
     <div class="w-full bg-blue-landing">
         <div class="container py-16 flex flex-col gap-8">

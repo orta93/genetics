@@ -84,4 +84,66 @@ class TestController extends Controller
 
         return $string;
     }
+
+    public function fix()
+    {
+        $tests = Test::all();
+        foreach ($tests as $test) {
+            $genes = collect();
+
+            $has_change = false;
+            foreach ($test->genes as $gene) {
+                if ($model = Gene::whereIn('id', $gene['genes'])->first()) {
+                    $remove = str_replace(' ', '', $model->display_name);
+                    $explode = explode(',', $remove);
+
+                    if (count($explode) > 1) {
+                        $has_change = true;
+                        $new_genes = collect();
+                        foreach ($explode as $item) {
+                            try {
+                                $item = $this->removeAccents($item);
+                                if ($item != '') {
+                                    $new_gene = Gene::firstOrCreate(['name' => strtolower($item)], ['display_name' => $item]);
+                                    if ($new_gene) {
+                                        $new_genes->push($new_gene->id);
+                                    }
+                                }
+                            } catch (\Exception $e) {
+                                dd($e);
+                            }
+                        }
+
+                        $genes->push(['name' => $gene['name'], 'genes' => $new_genes->toArray()]);
+                    } elseif ($explode[0] == '') {
+                        $has_change = true;
+                        $genes->push(['name' => $gene['name'], 'genes' => []]);
+                    } else {
+                        $genes->push($gene);
+                    }
+                }
+            }
+
+            if ($has_change) {
+                echo $test->id . '<br>';
+                Test::where('id', $test->id)->update(['genes' => $genes]);
+            }
+
+            $disorders = collect();
+            foreach ($test->disorders as $disorder) {
+                if ($disorder !== '') {
+                    $disorders->push($disorder);
+                }
+            }
+
+            if ($disorders->count() !== count($test->disorders)) {
+                Test::where('id', $test->id)->update(['disorders' => $disorders]);
+            }
+        }
+    }
+
+    private function removeAccents($str)
+    {
+        return strtr(utf8_decode($str), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+    }
 }

@@ -3,8 +3,8 @@
 @section('content')
     @include('partials.landing', [
         'title' => 'Desde la planificación hasta el embarazo y la paternidad, la genética puede ayudar',
-        'image' => '/images/journey-pregnancy.webp',
-        'bg' => 'bg-brown-primary',
+        'image' => '/images/BANNER_EMBARAZO_.jpg',
+        'bgStyle' => 'background-color: #eaeaea;',
         'resize' => true,
         'reverse' => true
     ])

@@ -64,11 +64,11 @@
         ];
     @endphp
 
-    <div class="container py-8">
+    {{--<div class="container py-8">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">¿Cómo funciona la prueba?</p>
         </div>
 
         @include('partials.steps', ['steps' => $steps])
-    </div>
+    </div>--}}
 @endsection

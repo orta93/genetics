@@ -4,8 +4,9 @@
     @include('partials.landing', [
         'title' => 'Tu salud comienza en tus genes.',
         'subtitle' => env('APP_NAME').' facilita el acceso a su información genética única, para que pueda tomar el control de su salud.',
-        'image' => '/images/hero-large.webp',
+        'image' => '/images/BANNER_PRINCIPAL_.jpg',
         'link' => route('catalogo'),
+        'color' => 'text-black md:text-white',
         'linkLabel' => 'Catálogo de Pruebas'
     ])
 
@@ -39,13 +40,16 @@
         ];
     @endphp
 
-    <div class="container py-12">
+    <div class="hidden sm:flex flex-col container py-12">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">Construya su plan para una mejor salud.</p>
             <p class="font-light">¿Tiene una pregunta de salud? Tenemos una prueba para ti.</p>
         </div>
 
         @include('partials.cards', ['cards' => $plans])
+    </div>
+    <div class="block sm:hidden">
+        <vue-carousel type="cards" :items='@json($plans)'/>
     </div>
 
     @php $patients = 2000000; @endphp
@@ -104,13 +108,13 @@
         ];
     @endphp
 
-    <div class="container py-8">
+    {{--<div class="container py-8">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">¿Cómo funciona?</p>
         </div>
 
         @include('partials.steps', ['steps' => $steps])
-    </div>
+    </div>--}}
 
     <div class="w-full bg-blue-primary text-white">
         <div class="container py-16 flex flex-col gap-4">
@@ -124,17 +128,17 @@
             [
                 'quote' => '¿Cómo digo que no a una oportunidad de reducir todas estas posibilidades de tener cáncer y seguir estando allí para mis hijos y mi familia?',
                 'author' => 'Sarah',
-                'img' => 'eisley-images-legacy-session-family-109.webp'
+                'img' => 'TESTIMONIALES_1.jpg'
             ],
             [
                 'quote' => 'Casi 5 años después de perder a mi bebé por nacer, tuve la oportunidad de obtener finalmente respuestas... sobre por qué mi cuerpo no podía soportar este milagro, algo para responder a la pregunta constante de si había hecho algo para causar mi aborto espontáneo.',
                 'author' => 'Stefanie Castro',
-                'img' => 'Headshot_Stefanie_Castro.webp'
+                'img' => 'TESTIMONIALES_2.jpg'
             ],
             [
                 'quote' => '[Las pruebas genéticas] cambiaron su categoría de riesgo y su plan de tratamiento.',
                 'author' => 'Meredith, madre de Alexis',
-                'img' => 'Alexis.webp'
+                'img' => 'TESTIMONIALES_3.jpg'
             ]
         ];
     @endphp

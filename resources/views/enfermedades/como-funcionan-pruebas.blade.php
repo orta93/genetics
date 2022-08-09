@@ -49,7 +49,7 @@
 
     @include('partials.image-container', [
         'title' => '¿Dudas sobre el costo?',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'items' => [
             'Tienes mucho en mente, y lo último de lo que debes preocuparte es de otro gasto médico. Es por eso que hemos priorizado hacer que nuestras pruebas genéticas sean asequibles.',
             'Pruebas genéticas Invitae',

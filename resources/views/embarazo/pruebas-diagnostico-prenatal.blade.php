@@ -29,9 +29,9 @@
         ];
     @endphp
 
-    <div class="container py-8">
+    {{--<div class="container py-8">
         @include('partials.steps', ['steps' => $steps])
-    </div>
+    </div>--}}
 
     @include('partials.landing', [
         'title' => 'El Colegio Estadounidense de Obstetras y Ginecólogos (ACOG, por sus siglas en inglés) recomienda que a todas las mujeres, independientemente de su edad, se les ofrezcan exámenes de detección y/o pruebas de diagnóstico para detectar afecciones cromosómicas durante el embarazo.',
@@ -64,7 +64,7 @@
         ];
     @endphp
 
-    <div class="w-full bg-gray-100">
+    {{--<div class="w-full bg-gray-100">
         <div class="container py-12">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">Una opción para cada embarazo</p>
@@ -72,11 +72,11 @@
             </div>
             @include('partials.steps', ['steps' => $steps_title])
         </div>
-    </div>
+    </div>--}}
 
     @include('partials.image-container', [
         'title' => '¿Cómo funciona la prueba?',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'items' => [
             'Su proveedor de atención médica recolectará una pequeña muestra de las células de su bebé en desarrollo para analizar sus cromosomas. Las muestras se pueden recolectar de una de dos maneras:',
             'La muestra de vellosidades coriónicas (CVS, por sus siglas en inglés) es un procedimiento del primer trimestre que recolecta células de la placenta mediante un tubo de plástico delgado que se inserta a través del cuello uterino o una aguja delgada que se inserta en el abdomen (se usa un ultrasonido para guiar la aguja de manera segura).',

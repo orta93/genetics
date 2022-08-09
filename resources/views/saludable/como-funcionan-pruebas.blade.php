@@ -39,7 +39,7 @@
 
     @include('partials.image-container', [
         'title' => '¿Dudas sobre el costo?',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'items' => [
             'Regularmente gastas dinero en cosas que apoyan tu salud.',
             'Un masaje: $80',

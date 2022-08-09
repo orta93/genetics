@@ -3,8 +3,8 @@
 @section('content')
     @include('partials.landing', [
         'title' => 'Su ADN puede ayudar a responder sus preguntas de salud',
-        'image' => '/images/27_Jasmine_Tiffany_Jaylee_6687.webp',
-        'bg' => 'bg-brown-secondary',
+        'image' => '/images/BANNER_ENF_GENETICAS_.jpg',
+        'bgStyle' => 'background-color: #c87e7f;',
         'color' => 'text-white',
         'resize' => true
     ])
@@ -48,20 +48,17 @@
 
             @include('partials.steps', ['steps' => $steps])
 
-            <div class="flex justify-center">
+            {{--<div class="flex justify-center">
                 <a href="{{ route('enfermedades.porque-genes-importan') }}" class="btn">Cuéntame mas</a>
-            </div>
+            </div>--}}
         </div>
     </div>
 
     @include('partials.landing', [
         'title' => 'Más de una docena de sociedades médicas importantes recomiendan las pruebas genéticas como una forma de diagnosticar una afección de salud o encontrar el tratamiento adecuado.',
-        'image' => '/images/bitmap_3x_alt.webp',
-        'bg' => 'bg-blue-landing',
-        'self' => 'self-end',
-        'reverse' => true,
-        'bgPosition' => 'bg-left-top',
+        'image' => '/images/PRUEBA-GENETICA.jpg',
         'color' => 'text-white',
+        'bgStyle' => 'background-color: #dca775;',
         'resize' => true
     ])
 
@@ -85,7 +82,7 @@
         ];
     @endphp
 
-    <div class="w-full bg-gray-100">
+    {{--<div class="w-full bg-gray-100">
         <div class="container py-8">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">¿Cómo funcionan las pruebas?</p>
@@ -98,5 +95,5 @@
                 <a href="{{ route('enfermedades.como-funcionan-pruebas') }}" class="btn">Cuéntame mas</a>
             </div>
         </div>
-    </div>
+    </div>--}}
 @endsection

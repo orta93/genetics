@@ -53,14 +53,14 @@
         ];
     @endphp
 
-    <div class="container py-8">
+    {{--<div class="container py-8">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">¿Cómo funciona la prueba?</p>
             <p class="text-xl">Ya sea que esté comenzando a pensar en tener un bebé, intentándolo activamente o ya esté embarazada, ahora es un buen momento para hacerse una prueba de detección de portadores. Es una manera simple e indolora de estar preparado.</p>
         </div>
 
         @include('partials.steps', ['steps' => $steps])
-    </div>
+    </div>--}}
 
     @include('partials.landing', [
         'title' => 'La principal organización de obstetricia y ginecología, el Colegio Estadounidense de Obstetras y Ginecólogos, recomienda que se ofrezca la detección de portadores a todas las mujeres embarazadas o que planeen quedar embarazadas..',
@@ -89,7 +89,7 @@
 
     @include('partials.image-container', [
         'title' => '¿Dudas sobre el costo?',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'items' => [
             'La detección de portadores está cubierta por muchos planes de seguro y la mayoría de las personas pagan $100 USD e su bolsillo. Si su plan no lo cubre (o si no tiene seguro), '.env('APP_NAME').' ofrece un precio de pago por cuenta propia de $250 USD para usted (y $100 para su pareja si también necesitan pruebas). Siempre puede usar su HSA/FSA.'
         ],

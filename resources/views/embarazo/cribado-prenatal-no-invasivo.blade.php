@@ -65,7 +65,7 @@
 
     @include('partials.image-container', [
         'title' => '¿Dudas sobre el costo?',
-        'image' => '/images/box-angle-polo.webp',
+        'image' => '/images/box-angle-polo.png',
         'items' => [
             'La información genética es importante para cada embarazo. Es por eso que hicimos nuestras pruebas NIPS más asequibles que muchas otras compañías. Si su plan de seguro no lo cubre (o no tiene seguro), '.env('APP_NAME').' ofrece un precio reducido de pago por cuenta propia. También puede usar su HSA/FSA.'
         ],

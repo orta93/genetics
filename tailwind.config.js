@@ -20,6 +20,9 @@ module.exports = {
         center: true,
         padding: '1rem',
       },
+      height: {
+        'fit': 'fit-content'
+      },
       minHeight: {
         '96': '24rem'
       }
