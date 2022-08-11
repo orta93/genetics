@@ -1,7 +1,7 @@
-<div class="ht-ctc ht-ctc-chat ctc-analytics ctc_wp_desktop style-4 ht_ctc_animation no-animations" id="ht-ctc-chat" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 99999999;">
+<div style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 99999999;">
     <a href="https://web.whatsapp.com/send?phone=5218123528633&text=" target="_blank">
-        <div class="ht_ctc_style ht_ctc_chat_style">
-            <div class="chip ctc-analytics" style="display:flex;justify-content: center;align-items: center;background-color:#e4e4e4;color:#222222;padding:0 12px;border-radius:25px;font-size:13px;line-height:32px;">
+        <div>
+            <div style="display:flex;justify-content: center;align-items: center;background-color:#e4e4e4;color:#222222;padding:0 12px;border-radius:25px;font-size:13px;line-height:32px;">
                 <span style="margin:0 8px 0 -12px;;order:0;">
                     <svg style="pointer-events:none; display: block; height:35px; width:35px;" width="35px" height="35px" viewBox="0 0 1219.547 1225.016">
                         <path fill="#E0E0E0" d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z"></path>
@@ -15,7 +15,7 @@
                         <path fill="#FFF" d="M1036.898 176.091C923.562 62.677 772.859.185 612.297.114 281.43.114 12.172 269.286 12.039 600.137 12 705.896 39.633 809.13 92.156 900.13L7 1211.067l318.203-83.438c87.672 47.812 186.383 73.008 286.836 73.047h.255.003c330.812 0 600.109-269.219 600.25-600.055.055-160.343-62.328-311.108-175.649-424.53zm-424.601 923.242h-.195c-89.539-.047-177.344-24.086-253.93-69.531l-18.227-10.805-188.828 49.508 50.414-184.039-11.875-18.867c-49.945-79.414-76.312-171.188-76.273-265.422.109-274.992 223.906-498.711 499.102-498.711 133.266.055 258.516 52 352.719 146.266 94.195 94.266 146.031 219.578 145.992 352.852-.118 274.999-223.923 498.749-498.899 498.749z"></path>
                     </svg>
                 </span>
-                <span class="ctc_cta">WhatsApp</span>
+                <span>WhatsApp</span>
             </div>
         </div>
     </a>
@@ -33,14 +33,14 @@
             <div class="w-full md:w-1/2 flex flex-col md:flex-row gap-12">
                 <div class="flex flex-col">
                     <div class="font-bold">NUEVO LEÓN</div>
-                    <div class="flex gap-2">
+                    {{--<div class="flex gap-2">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                             </svg>
                         </div>
                         <div><a href="tel:8124744933">812 474 4933</a></div>
-                    </div>
+                    </div>--}}
                     <div class="flex gap-2">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -48,27 +48,7 @@
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                             </svg>
                         </div>
-                        <div><a href="mailto:contacto@mavelsa.com">contacto@mavelsa.com</a></div>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="font-bold">QUINTANA ROO</div>
-                    <div class="flex gap-2">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                            </svg>
-                        </div>
-                        <div><a href="tel:9984784558">998 478 4558</a></div>
-                    </div>
-                    <div class="flex gap-2">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                            </svg>
-                        </div>
-                        <div><a href="mailto:contacto@mavelsa.com">contacto@mavelsa.com</a></div>
+                        <div><a href="mailto:recepcion@mavelsagenetics.com">recepcion@mavelsagenetics.com</a></div>
                     </div>
                 </div>
             </div>
