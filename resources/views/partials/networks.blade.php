@@ -9,8 +9,8 @@
     @endphp
 
     @foreach($networks as $key => $network)
-        @if(env(strtoupper($key).'_handle', '') !== '')
-            <a href="{{ $network }}{{ env(strtoupper($key).'_handle') }}" class="text-white hover:text-red-primary" target="_blank">
+        @if(env(strtoupper($key).'_HANDLE', '') !== '')
+            <a href="{{ $network }}{{ env(strtoupper($key).'_HANDLE') }}" class="text-white hover:text-red-primary" target="_blank">
                 @include("icons.{$key}")
             </a>
         @endif
