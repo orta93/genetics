@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\ResultController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,8 @@ Route::get('/test/create', function () {
     $categories = \App\Models\Category::orderBy('name')->get();
     return view('test_form', ['categories' => $categories]);
 });
+
+Route::get('/resultados', [ResultController::class, 'show']);
 
 Route::post('/test/create', [TestController::class, 'store']);
 Route::get('/test/fix', [TestController::class, 'fix']);

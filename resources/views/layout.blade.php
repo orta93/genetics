@@ -53,6 +53,16 @@
         .list-disc {
             margin-left: 2rem;
         }
+
+        .results-table th, .results-table td {
+            text-align: left;
+            padding: 0.7rem 1rem;
+            border: 1px solid #ccc;
+        }
+
+        table.results-table tbody>tr:nth-child(odd)>td, table.results-table tbody>tr:nth-child(odd)>th {
+            background-color: #f7f7f7;
+        }
     </style>
 </head>
 <body class="bg-white text-black-primary">

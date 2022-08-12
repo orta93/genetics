@@ -151,7 +151,7 @@
         </div>
     </div>
 
-    @php
+    {{--@php
         $questions = [
             [
                 'question' => '¿Qué son las pruebas genéticas de grado médico?',
@@ -171,7 +171,7 @@
         <div class="w-3/4 md:w-1/2 mx-auto">
             <div class="font-bold text-3xl py-4 text-center border-b border-black">¿Tiene alguna pregunta?</div>
             <faq :items='@json($questions)'></faq>
-            {{--<div class="py-4"><a class="underline" href="#">Ver todas las preguntas frecuentes</a></div>--}}
+            <div class="py-4"><a class="underline" href="#">Ver todas las preguntas frecuentes</a></div>
         </div>
-    </div>
+    </div>--}}
 @endsection
