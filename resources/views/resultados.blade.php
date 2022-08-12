@@ -21,7 +21,7 @@
                         </tr>
                         <tr>
                             <th>Apellido: </th>
-                            <td>{{ $item->last_name }}</td>
+                            <td>{{ $item->last_name }} {{ $item->last_name_2 }}</td>
                         </tr>
                         <tr>
                             <th>Fecha de Toma: </th>
