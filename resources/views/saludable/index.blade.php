@@ -98,7 +98,7 @@
             'title' => 'Encuentre la prueba adecuada',
             'image' => '/images/box-angle-viola.png',
             'items' => [
-                'Invitae ofrece 4 pruebas que pueden decirle si tiene un mayor riesgo de desarrollar cáncer, enfermedades cardíacas y otras afecciones crónicas, así como la forma en que los genes afectan su respuesta a los medicamentos.'
+                env('APP_NAME').' ofrece 4 pruebas que pueden decirle si tiene un mayor riesgo de desarrollar cáncer, enfermedades cardíacas y otras afecciones crónicas, así como la forma en que los genes afectan su respuesta a los medicamentos.'
             ],
             'button' => route('saludable.acerca-de-pruebas'),
             'buttonLabel' => 'Ver mis opciones'

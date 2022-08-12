@@ -17,14 +17,14 @@
                 'title' => 'Paso 2: Haz tu prueba',
                 'content' => [
                     'Recibirás un kit de recolección de saliva por correo',
-                    'Simplemente proporcione una muestra de saliva y envíela por correo al laboratorio de Invitae en San Francisco'
+                    'Simplemente proporcione una muestra de saliva y envíela por correo al laboratorio de '.env('APP_NAME').' en San Francisco'
                 ]
             ],
             [
                 'title' => 'Paso 3: Actua',
                 'content' => [
                     'Recibe un mensaje de texto y un correo electrónico cuando tus resultados estén listos',
-                    'Simplemente inicie sesión en el portal invitae para ver lo que sus genes tienen que decir sobre su salud',
+                    'Simplemente inicie sesión en el portal '.env('APP_NAME').' para ver lo que sus genes tienen que decir sobre su salud',
                     'Haga un plan de acción con su médico'
                 ]
             ]
@@ -56,7 +56,7 @@
             'title' => 'Su privacidad es importante para nosotros',
             'image' => '/images/12-jessica-1675_3x.webp',
             'items' => [
-                'Nos tomamos en serio la privacidad; uno de nuestros principios básicos es que los pacientes poseen y controlan sus datos genéticos. Puede iniciar sesión en su cuenta de Invitae en cualquier momento para establecer sus preferencias y controlar cómo se utilizan sus datos.',
+                'Nos tomamos en serio la privacidad; uno de nuestros principios básicos es que los pacientes poseen y controlan sus datos genéticos. Puede iniciar sesión en su cuenta de '.env('APP_NAME').' en cualquier momento para establecer sus preferencias y controlar cómo se utilizan sus datos.',
                 '¿Quieres saber sobre las oportunidades de investigación relacionadas con tus resultados? Te tenemos. ¿Prefieres no hacerlo? Tú también puedes tener eso.'
             ]
         ])

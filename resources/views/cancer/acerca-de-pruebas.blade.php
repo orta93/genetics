@@ -10,7 +10,7 @@
 
     <div class="w-full bg-gray-100">
         @include('partials.image-container', [
-            'title' => 'Invitae ofrece pruebas para muchos tipos de cáncer, incluyendo:',
+            'title' => env('APP_NAME').' ofrece pruebas para muchos tipos de cáncer, incluyendo:',
             'image' => '/images/box-inside.png',
             'list_items' => [
                 'Seno',
@@ -31,12 +31,12 @@
             [
                 'title' => 'Pruebas exhaustivas',
                 'icon' => 'icon-computer-select-test.svg',
-                'description' => 'Invitae ofrece más de 50 pruebas exhaustivas, cada una de las cuales incluye genes relevantes para un tipo específico de cáncer.',
+                'description' => env('APP_NAME').' ofrece más de 50 pruebas exhaustivas, cada una de las cuales incluye genes relevantes para un tipo específico de cáncer.',
             ],
             [
                 'title' => 'Borrar los siguientes pasos',
                 'icon' => 'icons-80-px-outline-dsm-checkmark-o-m-yellow.svg',
-                'description' => 'Los resultados de Invitae vienen con los siguientes pasos claros, para que usted y su médico puedan tomar medidas basadas en su genética.',
+                'description' => 'Los resultados de '.env('APP_NAME').' vienen con los siguientes pasos claros, para que usted y su médico puedan tomar medidas basadas en su genética.',
             ],
             [
                 'title' => 'Acceso a expertos en genética',
@@ -49,7 +49,7 @@
     {{--<div class="container py-8">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">¿Qué está incluido?</p>
-            <p>Cuando solicitas una prueba genética invitae, obtienes:</p>
+            <p>Cuando solicitas una prueba genética {{ env('APP_NAME') }}, obtienes:</p>
         </div>
 
         @include('partials.steps', ['steps' => $steps])

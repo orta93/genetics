@@ -4,7 +4,7 @@
     <div class="container my-8 flex flex-col gap-6">
         <div class="text-5xl font-bold">Saber más comienza aquí</div>
         <div class="">
-            <p>Con una prueba Invitae, obtienes una imagen más completa de tu salud, de adentro hacia afuera.</p>
+            <p>Con una prueba {{ env('APP_NAME') }}, obtienes una imagen más completa de tu salud, de adentro hacia afuera.</p>
             <p>Ese es un paso para tomar decisiones más saludables. Pero no lo sabrá hasta que lo pruebe.</p>
         </div>
     </div>
@@ -12,25 +12,25 @@
     @php
         $options = [
             [
-                'title' => 'Invitae Detección de Cáncer',
+                'title' => env('APP_NAME').' Detección de Cáncer',
                 'icon' => 'box-angle-productcard.webp',
                 'bgColor' => 'bg-green-300',
                 'description' => 'Analiza 61 genes asociados con cánceres comunes, incluidos el cáncer de mama, ovario y próstata.'
             ],
             [
-                'title' => 'Invitae Cardio Screening',
+                'title' => env('APP_NAME').' Cardio Screening',
                 'icon' => 'box-angle-productcard.webp',
                 'bgColor' => 'bg-pink-900',
                 'description' => 'Analiza más de 75 genes asociados con formas genéticas de enfermedad cardíaca, incluido el agrandamiento del corazón, el ritmo cardíaco anormal y el colesterol alto.'
             ],
             [
-                'title' => 'Examen de salud genética de Invitae',
+                'title' => 'Examen de salud genética de '.env('APP_NAME'),
                 'icon' => 'box-angle-productcard.webp',
                 'bgColor' => 'bg-indigo-500',
                 'description' => 'Analiza hasta 147 genes, incluidos todos los genes en las pruebas de detección de cáncer y cardio, así como algunas afecciones hereditarias procesables.'
             ],
             [
-                'title' => 'Panel de Farmacogenómica de Invitae',
+                'title' => 'Panel de Farmacogenómica de '.env('APP_NAME'),
                 'icon' => 'box-angle-productcard.webp',
                 'bgColor' => 'bg-green-800',
                 'description' => 'Pruebe 38 genes para evaluar cómo sus genes afectan su respuesta a los medicamentos.'
@@ -51,12 +51,12 @@
             [
                 'title' => 'Hasta 147 genes',
                 'icon' => 'icons-80-px-outline-dsm-chromosome-o-m-green.svg',
-                'description' => 'Otras compañías de genética prueban menos de 10 genes. Las pruebas más completas de Invitae significan que es más probable que obtenga respuestas.',
+                'description' => 'Otras compañías de genética prueban menos de 10 genes. Las pruebas más completas de '.env('APP_NAME').' significan que es más probable que obtenga respuestas.',
             ],
             [
                 'title' => 'Borrar los siguientes pasos',
                 'icon' => 'icons-80-px-outline-dsm-checkmark-o-m-yellow.svg',
-                'description' => 'Las pruebas de Invitae se centran en afecciones que pueden prevenirse o tratarse si se descubren a tiempo, para que pueda tomar medidas en función de sus resultados.',
+                'description' => 'Las pruebas de '.env('APP_NAME').' se centran en afecciones que pueden prevenirse o tratarse si se descubren a tiempo, para que pueda tomar medidas en función de sus resultados.',
             ],
             [
                 'title' => 'Acceso directo a expertos en genética',
@@ -70,7 +70,7 @@
         <div class="container py-8">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">¿Qué está incluido?</p>
-                <p class="text-xl">Cuando solicitas esta prueba genética invitae, obtienes:</p>
+                <p class="text-xl">Cuando solicitas esta prueba genética {{ env('APP_NAME') }}, obtienes:</p>
             </div>
 
             @include('partials.steps', ['steps' => $steps])

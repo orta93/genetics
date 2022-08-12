@@ -82,7 +82,7 @@
         'title' => 'Encuentre la prueba adecuada',
         'image' => '/images/box-angle-polo.png',
         'items' => [
-            'Invitae ofrece una serie de pruebas centradas en tipos específicos de cáncer. Cada uno viene con los siguientes pasos claros, para que usted y su médico puedan tomar decisiones personalizadas para sus genes.'
+            env('APP_NAME').' ofrece una serie de pruebas centradas en tipos específicos de cáncer. Cada uno viene con los siguientes pasos claros, para que usted y su médico puedan tomar decisiones personalizadas para sus genes.'
         ],
         'button' => route('cancer.acerca-de-pruebas'),
         'buttonLabel' => 'Ver mis opciones'

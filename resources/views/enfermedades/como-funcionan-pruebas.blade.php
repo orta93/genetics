@@ -25,7 +25,7 @@
                 'title' => 'Paso 2: Haz tu prueba',
                 'content' => [
                     'Recibirás un kit de recolección de saliva por correo.',
-                    'Simplemente proporcione una muestra de saliva y envíela por correo al laboratorio de Invitae en San Francisco.',
+                    'Simplemente proporcione una muestra de saliva y envíela por correo al laboratorio de '.env('APP_NAME').' en San Francisco.',
                     'También ofrecemos muestras de hisopos de mejillas para niños y otras personas que lo necesitan.'
                 ]
             ],
@@ -33,7 +33,7 @@
                 'title' => 'Paso 3: Revisa tus resultados',
                 'content' => [
                     'Si comenzó su pedido en línea, recibirá un mensaje de texto y un correo electrónico cuando sus resultados estén listos.',
-                    'Inicie sesión en el portal de Invitae para ver sus resultados, incluidos los siguientes pasos recomendados',
+                    'Inicie sesión en el portal de '.env('APP_NAME').' para ver sus resultados, incluidos los siguientes pasos recomendados',
                     'Puede discutir los resultados con un asesor genético y compartirlos directamente con su equipo de atención médica para incorporarlos a su plan de tratamiento.',
                     'Si su médico ordenó la prueba, recibirán sus resultados y usted puede trabajar juntos para incorporarlos a su plan de tratamiento.'
                 ]
@@ -52,11 +52,11 @@
         'image' => '/images/box-angle-polo.png',
         'items' => [
             'Tienes mucho en mente, y lo último de lo que debes preocuparte es de otro gasto médico. Es por eso que hemos priorizado hacer que nuestras pruebas genéticas sean asequibles.',
-            'Pruebas genéticas Invitae',
-            'La mayoría de nuestras pruebas están cubiertas por el seguro. El costo promedio de bolsillo para una prueba Invitae es inferior a $ 100',
+            'Pruebas genéticas '.env('APP_NAME'),
+            'La mayoría de nuestras pruebas están cubiertas por el seguro. El costo promedio de bolsillo para una prueba '.env('APP_NAME').' es inferior a $ 100',
             'Si no usa su seguro, nuestro precio de autopago es de $ 250',
             'Visita virtual de atención médica',
-            'Si solicita una prueba a través de nuestro sitio web, Invitae lo conectará con un proveedor de Genome Medical, quien realizará su pedido.',
+            'Si solicita una prueba a través de nuestro sitio web, '.env('APP_NAME').' lo conectará con un proveedor de Genome Medical, quien realizará su pedido.',
             'El costo típico de bolsillo para los servicios de Genome Medical es de $ 50',
             'Si no está asegurado, el cargo de Genome Medical es de $125'
         ]
@@ -68,7 +68,7 @@
             'image' => '/images/12-jessica-1675_3x.webp',
             'reverse' => true,
             'items' => [
-                'Nos tomamos en serio la privacidad; uno de nuestros principios básicos es que los pacientes poseen y controlan sus datos genéticos. Puede iniciar sesión en su cuenta de Invitae en cualquier momento para establecer sus preferencias y controlar cómo se utilizan sus datos.',
+                'Nos tomamos en serio la privacidad; uno de nuestros principios básicos es que los pacientes poseen y controlan sus datos genéticos. Puede iniciar sesión en su cuenta de '.env('APP_NAME').' en cualquier momento para establecer sus preferencias y controlar cómo se utilizan sus datos.',
                 '¿Quieres saber sobre las oportunidades de investigación relacionadas con tus resultados? Te tenemos. ¿Prefieres no hacerlo? Tú también puedes tener eso.'
             ]
         ])
