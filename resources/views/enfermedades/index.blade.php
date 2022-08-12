@@ -48,9 +48,9 @@
 
             @include('partials.steps', ['steps' => $steps])
 
-            {{--<div class="flex justify-center">
+            <div class="flex justify-center">
                 <a href="{{ route('enfermedades.porque-genes-importan') }}" class="btn">Cuéntame mas</a>
-            </div>--}}
+            </div>
         </div>
     </div>
 
@@ -62,38 +62,5 @@
         'resize' => true
     ])
 
-    @php
-        $steps = [
-            [
-                'title' => 'Paso 1',
-                'icon' => 'Size_80px__3_.svg',
-                'description' => 'Solicite una prueba en línea. Un médico independiente revisará y aprobará su pedido.',
-            ],
-            [
-                'title' => 'Paso 2',
-                'icon' => 'Size_80px__14_.svg',
-                'description' => 'Proporcione una muestra de saliva desde la comodidad de su hogar y envíela a nuestro laboratorio.',
-            ],
-            [
-                'title' => 'Paso 3',
-                'icon' => 'icons-80-px-outline-dsm-gc-o-m-green-2-color.svg',
-                'description' => 'Obtenga sus resultados en línea y compártalos con su médico. Si lo desea, hable con un asesor genético sin costo adicional.',
-            ]
-        ];
-    @endphp
-
-    {{--<div class="w-full bg-gray-100">
-        <div class="container py-8">
-            <div class="w-full text-center flex flex-col gap-4">
-                <p class="font-bold text-3xl">¿Cómo funcionan las pruebas?</p>
-                <p>Sabemos que está recibiendo muchas pruebas en este momento. Nuestras pruebas genéticas se pueden iniciar desde la comodidad de su hogar con una simple muestra de saliva.</p>
-            </div>
-
-            @include('partials.steps', ['steps' => $steps])
-
-            <div class="flex justify-center">
-                <a href="{{ route('enfermedades.como-funcionan-pruebas') }}" class="btn">Cuéntame mas</a>
-            </div>
-        </div>
-    </div>--}}
+    @include('partials.steps_alt')
 @endsection

@@ -61,37 +61,7 @@
         'resize' => true
     ])
 
-    @php
-        $steps = [
-            [
-                'title' => 'Paso 1',
-                'icon' => 'Size_80px__3_.svg',
-                'description' => 'Solicite una prueba en línea. Un médico independiente revisará y aprobará su pedido.',
-            ],
-            [
-                'title' => 'Paso 2',
-                'icon' => 'Size_80px__14_.svg',
-                'description' => 'Proporcione una muestra de saliva desde la comodidad de su hogar y envíela a nuestro laboratorio.',
-            ],
-            [
-                'title' => 'Paso 3',
-                'icon' => 'icons-80-px-outline-dsm-gc-o-m-green-2-color.svg',
-                'description' => 'Obtenga sus resultados en línea y compártalos con su médico. Si lo desea, hable con un asesor genético sin costo adicional.',
-            ]
-        ];
-    @endphp
-
-    {{--<div class="container py-8">
-        <div class="w-full text-center flex flex-col gap-4">
-            <p class="font-bold text-3xl">¿Cómo funcionan las pruebas?</p>
-        </div>
-
-        @include('partials.steps', ['steps' => $steps])
-
-        <div class="flex justify-center">
-            <a href="{{ route('saludable.como-funcionan-pruebas') }}" class="btn">Cuéntame mas</a>
-        </div>
-    </div>--}}
+    @include('partials.steps_alt')
 
     <div class="w-full bg-gray-100">
         @include('partials.image-container', [

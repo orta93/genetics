@@ -41,8 +41,6 @@
                 type: String,
                 default: 'stories'
             }
-        },
-        computed: {
         }
     }
 </script>

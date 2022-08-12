@@ -88,33 +88,7 @@
         </div>
     </div>
 
-    @php
-        $steps = [
-            [
-                'title' => 'Paso 1',
-                'icon' => 'Size_80px__3_.svg',
-                'description' => 'Solicite una prueba en línea. Un médico hará una orden para usted.',
-            ],
-            [
-                'title' => 'Paso 2',
-                'icon' => 'Size_80px__14_.svg',
-                'description' => 'Proporcione una muestra de saliva desde la comodidad de su hogar.',
-            ],
-            [
-                'title' => 'Paso 3',
-                'icon' => 'Size_80px__15.svg',
-                'description' => 'Obtenga sus resultados en línea y compártalos con su médico. Si lo desea, hable con un asesor genético sin costo adicional.',
-            ]
-        ];
-    @endphp
-
-    {{--<div class="container py-8">
-        <div class="w-full text-center flex flex-col gap-4">
-            <p class="font-bold text-3xl">¿Cómo funciona?</p>
-        </div>
-
-        @include('partials.steps', ['steps' => $steps])
-    </div>--}}
+    @include('partials.steps_alt')
 
     <div class="w-full bg-blue-primary text-white">
         <div class="container py-16 flex flex-col gap-4">

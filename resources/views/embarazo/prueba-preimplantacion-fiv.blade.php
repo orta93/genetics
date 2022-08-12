@@ -46,34 +46,5 @@
         </div>
     </div>
 
-    @php
-        $steps = [
-            [
-                'title' => 'Paso 1',
-                'subtitle' => 'Recoleccion de muestra',
-                'icon' => 'icons-80-px-outline-dsm-sample-collection-repro-o-m-green.svg',
-                'description' => 'Su equipo de fertilidad recolecta cuidadosamente solo unas pocas células de sus embriones y las envía a nuestro laboratorio para su análisis.',
-            ],
-            [
-                'title' => 'Paso 2',
-                'subtitle' => 'Análisis de muestras',
-                'icon' => 'icons-80-px-outline-dsm-microscope-o-m-two-color.svg',
-                'description' => 'Nuestros científicos analizan si cada embrión tiene alguna anomalía cromosómica que pueda causar un aborto espontáneo o una condición de salud.',
-            ],
-            [
-                'title' => 'Paso 3',
-                'subtitle' => 'Resultados',
-                'icon' => 'icons-80-px-outline-dsm-computer-analytics-o-m-two-color.svg',
-                'description' => 'Según sus resultados, su equipo de fertilidad selecciona embriones para transferir, lo que aumenta sus posibilidades de un embarazo exitoso.',
-            ]
-        ];
-    @endphp
-
-    {{--<div class="container py-8">
-        <div class="w-full text-center flex flex-col gap-4">
-            <p class="font-bold text-3xl">¿Cómo funciona la prueba?</p>
-        </div>
-
-        @include('partials.steps', ['steps' => $steps])
-    </div>--}}
+    @include('partials.steps_alt')
 @endsection

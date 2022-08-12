@@ -64,7 +64,7 @@
         ];
     @endphp
 
-    {{--<div class="w-full bg-gray-100">
+    <div class="w-full bg-gray-100">
         <div class="container py-12">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">Una opción para cada embarazo</p>
@@ -72,7 +72,7 @@
             </div>
             @include('partials.steps', ['steps' => $steps_title])
         </div>
-    </div>--}}
+    </div>
 
     @include('partials.image-container', [
         'title' => '¿Cómo funciona la prueba?',

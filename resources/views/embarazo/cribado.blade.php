@@ -33,34 +33,7 @@
         'reverse' => true
     ])
 
-    @php
-        $steps = [
-            [
-                'title' => 'Paso 1',
-                'icon' => 'Size_80px__3_.svg',
-                'description' => 'Solicite una prueba en línea. Un médico independiente revisará y aprobará su pedido.',
-            ],
-            [
-                'title' => 'Paso 2',
-                'icon' => 'Size_80px__14_.svg',
-                'description' => 'Proporcione una muestra de saliva desde la comodidad de su hogar y envíela a nuestro laboratorio.',
-            ],
-            [
-                'title' => 'Paso 3',
-                'icon' => 'icons-80-px-outline-dsm-gc-o-m-green-2-color.svg',
-                'description' => 'Obtenga sus resultados en línea y compártalos con su médico. Si lo desea, hable con un asesor genético sin costo adicional.',
-            ]
-        ];
-    @endphp
-
-    {{--<div class="container py-8">
-        <div class="w-full text-center flex flex-col gap-4">
-            <p class="font-bold text-3xl">¿Cómo funciona la prueba?</p>
-            <p class="text-xl">Ya sea que esté comenzando a pensar en tener un bebé, intentándolo activamente o ya esté embarazada, ahora es un buen momento para hacerse una prueba de detección de portadores. Es una manera simple e indolora de estar preparado.</p>
-        </div>
-
-        @include('partials.steps', ['steps' => $steps])
-    </div>--}}
+    @include('partials.steps_alt')
 
     @include('partials.landing', [
         'title' => 'La principal organización de obstetricia y ginecología, el Colegio Estadounidense de Obstetras y Ginecólogos, recomienda que se ofrezca la detección de portadores a todas las mujeres embarazadas o que planeen quedar embarazadas..',

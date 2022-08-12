@@ -33,35 +33,7 @@
         'image' => '/images/APROVECHE.png'
     ])
 
-    @php
-        $steps = [
-            [
-                'title' => 'Paso 1',
-                'icon' => 'Size_80px__7_.svg',
-                'description' => 'Solicite una prueba en línea y un médico independiente revisará y, si corresponde, aprobará su pedido.',
-            ],
-            [
-                'title' => 'Paso 2',
-                'icon' => 'Size_80px__14_.svg',
-                'description' => 'Proporcione una muestra de frotis bucal desde la comodidad de su hogar y envíela a nuestro laboratorio.',
-            ],
-            [
-                'title' => 'Paso 3',
-                'icon' => 'Size_80px__15_.svg',
-                'description' => 'Obtenga sus resultados y compártalos con su médico.',
-            ]
-        ];
-    @endphp
-
-    {{--<div class="w-full bg-gray-100">
-        <div class="container py-12">
-            <div class="w-full text-center flex flex-col gap-4">
-                <p class="font-bold text-3xl">¿Listo para probar cómo su ADN afecta su respuesta a los medicamentos?</p>
-            </div>
-
-            @include('partials.steps', ['steps' => $steps])
-        </div>
-    </div>--}}
+    @include('partials.steps_alt')
 
     <div class="container py-12 flex flex-col md:flex-row gap-x-16 gap-y-4">
         <div class="w-full flex flex-col gap-2">

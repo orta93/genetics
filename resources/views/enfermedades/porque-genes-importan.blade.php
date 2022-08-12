@@ -61,7 +61,7 @@
         ];
     @endphp
 
-    {{--<div class="w-full bg-gray-100">
+    <div class="w-full bg-gray-100">
         <div class="container py-8">
             <div class="w-full text-center flex flex-col gap-4">
                 <p class="font-bold text-3xl">{{ env('APP_NAME') }} ofrece pruebas para una variedad de problemas de salud</p>
@@ -70,7 +70,7 @@
 
             @include('partials.steps', ['steps' => $steps])
         </div>
-    </div>--}}
+    </div>
 
     @include('partials.image-container', [
         'title' => 'Las pruebas genéticas pueden proporcionar información de salud esencial y pueden mejorar los resultados al:',
@@ -127,12 +127,12 @@
         ];
     @endphp
 
-    {{--<div class="container py-8">
+    <div class="container py-8">
         <div class="w-full text-center flex flex-col gap-4">
             <p class="font-bold text-3xl">¿Qué está incluido?</p>
             <p>Cuando solicitas una prueba genética {{ env('APP_NAME') }}, obtienes:</p>
         </div>
 
         @include('partials.steps', ['steps' => $steps])
-    </div>--}}
+    </div>
 @endsection
