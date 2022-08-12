@@ -6,6 +6,6 @@ $images = [
     ['img' => 'CARRUSEL_4.jpg']
 ];
 @endphp
-<div class="w-full">
+<div class="w-full" style="background: #e6e9f0;">
     <images-carousel :items='@json($images)'></images-carousel>
 </div>
