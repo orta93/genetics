@@ -24,15 +24,15 @@
         $steps = [
             [
                 'title' => 'Cambios en el estilo de vida',
-                'icon' => 'icons-80-px-outline-dsm-male-o-m-two-color.svg'
+                'icon' => 'ESTILO-DE-VIDA.png'
             ],
             [
                 'title' => 'Acción temprana para prevenir la aparición de la enfermedad',
-                'icon' => 'icons-80-px-outline-dsm-timer-o-m-green.svg'
+                'icon' => 'ATENCION-A-TIEMPO.png'
             ],
             [
                 'title' => 'Exámenes más frecuentes o más tempranos para una afección o enfermedad en particular',
-                'icon' => 'Size_80px__2_.svg'
+                'icon' => 'EXAMENES.png'
             ]
         ];
     @endphp

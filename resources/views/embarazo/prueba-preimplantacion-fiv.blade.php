@@ -15,9 +15,8 @@
         </div>
     </div>
 
-    @include('partials.image-container', [
+    @include('partials.landing', [
         'title' => 'Un paso más cerca de un embarazo saludable',
-        'image' => '/images/35-jessica-may-9537_3x.webp',
         'items' => [
             'La mayoría de los abortos espontáneos, especialmente los que ocurren en el primer trimestre, se deben a anomalías cromosómicas. Esta prueba funciona mediante la identificación de embriones con cromosomas adicionales o faltantes o fragmentos de cromosomas.',
             'Al analizar los embriones antes de la transferencia de FIV, es posible que tenga:'
@@ -27,6 +26,12 @@
             'Un riesgo reducido de aborto espontáneo',
             'La capacidad de identificar el sexo de su bebé (solo si desea saberlo)',
         ],
+        'image' => '/images/UN-PASO-MAS.jpg',
+        'bgStyle' => 'background-color: #eef2f5;',
+        'bgPosition' => 'bg-left-bottom',
+        'color' => 'text-blue-primary',
+        'self' => 'self-end',
+        'resize' => true,
         'reverse' => true
     ])
 

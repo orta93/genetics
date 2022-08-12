@@ -15,19 +15,19 @@
         $plans = [
             [
                 'title' => 'Embarazo',
-                'icon' => 'icon-pregnancy-duotone.svg',
+                'icon' => 'EMBARAZO.png',
                 'description' => 'Obtenga información útil para guiar decisiones de salud importantes antes y durante el embarazo.',
                 'link' => route('embarazo')
             ],
             [
                 'title' => 'Wellness',
-                'icon' => 'Size_80px__17_.svg',
+                'icon' => 'WELLNESS.png',
                 'description' => 'Obtenga lo que necesita para desarrollar un plan de salud personalizado para enfermedades cardíacas, cáncer y más.',
                 'link' => route('saludable')
             ],
             [
                 'title' => 'Cancer',
-                'icon' => 'icon-financial-assistance-duotone.svg',
+                'icon' => 'CANCER.png',
                 'description' => 'Comprenda sus genes para que usted y su médico puedan encontrar los tratamientos más efectivos.',
                 'link' => route('cancer')
             ],

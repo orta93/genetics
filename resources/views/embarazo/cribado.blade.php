@@ -15,7 +15,7 @@
 
     @include('partials.image-container', [
         'title' => 'Pruebas exhaustivas, simplificadas',
-        'image' => '/images/box-inside.webp',
+        'image' => '/images/box-inside.png',
         'items' => [
             'La prueba de detección integral de portadores de '.env('APP_NAME').' analiza su ADN en busca de más de 280 afecciones genéticas, incluida la fibrosis quística, la enfermedad de Tay-Sachs, el síndrome X frágil y la atrofia muscular espinal.',
             'Esta es la misma prueba que su obstetra y ginecólogo puede ofrecerle en su cita de 8 semanas, pero no hay motivo para esperar. Cuanto antes sepas tus resultados, mejor.'
@@ -24,10 +24,10 @@
 
     @include('partials.landing', [
         'title' => 'La mayoría de los bebés que nacen con una condición genética rara nacen de padres sin antecedentes familiares de esa condición.',
-        'image' => '/images/14-toevan-akilah-1962_3x_2.webp',
-        'bg' => 'bg-blue-landing',
-        'bgPosition' => 'bg-left-top',
-        'color' => 'text-white',
+        'image' => '/images/BANNER_LAMAYORIA_.jpg',
+        'bgStyle' => 'background-color: #e5e6e8;',
+        'bgPosition' => 'bg-left-bottom',
+        'color' => 'text-blue-primary',
         'self' => 'self-end',
         'resize' => true,
         'reverse' => true
@@ -64,19 +64,18 @@
 
     @include('partials.landing', [
         'title' => 'La principal organización de obstetricia y ginecología, el Colegio Estadounidense de Obstetras y Ginecólogos, recomienda que se ofrezca la detección de portadores a todas las mujeres embarazadas o que planeen quedar embarazadas..',
-        'image' => '/images/37_May_9582_5x.webp',
-        'bg' => 'bg-gray-100',
-        'bgPosition' => 'bg-left-top',
+        'image' => '/images/BANNER_LAPRINCIPAL.jpg',
+        'bgStyle' => 'background-color: #d9dade;',
+        'bgPosition' => 'bg-left-bottom',
         'color' => 'text-black-primary',
         'self' => 'self-end',
         'size' => 3,
         'resize' => true,
-        'reverse' => true
     ])
 
     @include('partials.image-container', [
         'title' => '¿Qué pasa si soy un portador?',
-        'image' => '/images/23-reshma-rishi-4727_3x.webp',
+        'image' => '/images/PORTADOR_.png',
         'items' => [
             'Si sus resultados indican que es portadora de una afección, el próximo paso suele ser evaluar a su pareja, ya que para la mayoría de las afecciones, ambos deben ser portadores para que su bebé esté en riesgo.',
             'Si tanto usted como su pareja son portadores, los asesores genéticos de '.env('APP_NAME').' pueden ayudarlo a comprender el riesgo exacto para su bebé, así como sus opciones, que incluyen:'

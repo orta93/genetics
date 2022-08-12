@@ -11,7 +11,7 @@
     <div class="w-full bg-gray-100">
         @include('partials.image-container', [
             'title' => 'Invitae ofrece pruebas para muchos tipos de cáncer, incluyendo:',
-            'image' => '/images/box-inside.webp',
+            'image' => '/images/box-inside.png',
             'list_items' => [
                 'Seno',
                 'Ovario, útero y endometrio',

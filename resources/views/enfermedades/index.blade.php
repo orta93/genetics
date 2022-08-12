@@ -22,19 +22,19 @@
         $steps = [
             [
                 'title' => 'Encuentre un diagnóstico médico para síntomas inexplicables',
-                'icon' => 'Size_80px__3_.svg'
+                'icon' => 'ENCONTRAR-DIAGNOSTICO.png'
             ],
             [
                 'title' => 'Confirmar una sospecha de enfermedad',
-                'icon' => 'icons-80-px-outline-dsm-checkmark-o-m-yellow.svg'
+                'icon' => 'CONFIRMAR.png'
             ],
             [
                 'title' => 'Descubrir nuevas o mejores opciones de tratamiento (y evitar las innecesarias)',
-                'icon' => 'icons-80-px-outline-dsm-test-options-o-m-green.svg'
+                'icon' => 'MEJORAS.png'
             ],
             [
                 'title' => 'Identificar a los miembros de la familia que también pueden estar en riesgo',
-                'icon' => 'icons-80-px-outline-dsm-family-2-o-m-yellow.svg'
+                'icon' => 'MIEMBROS-DE-FAMILIA.png'
             ]
         ];
     @endphp

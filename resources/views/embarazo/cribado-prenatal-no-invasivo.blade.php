@@ -18,18 +18,20 @@
             'La evaluación prenatal no invasiva se realiza mediante una simple extracción de sangre y controles para ver la posibilidad de que su bebé se vea afectado por ciertas condiciones cromosómicas, incluido el síndrome de Down.',
             'Estas condiciones se deben a material genético adicional o faltante llamado cromosomas, lo que puede conducir a una condición médica. Las pruebas también pueden predecir el sexo de su bebé (si desea saberlo).'
         ],
-        'image' => '/images/13-akilah-2860_3x.webp',
+        'image' => '/images/PARTE-IMPORTANTE.png',
         'reverse' => true
     ])
 
     @include('partials.landing', [
         'title' => 'La principal organización de obstetricia y ginecología, el Colegio Estadounidense de Obstetras y Ginecólogos, recomienda ofrecer pruebas de detección de aneuploidías, que incluyen pruebas de detección prenatales no invasivas, a todas las mujeres, independientemente de la edad materna.',
-        'image' => '/images/16-ricarda-talia-lupe-3089-1_3x.webp',
-        'bg' => 'bg-blue-landing',
+        'image' => '/images/BANNER_LAPRINCIPAL.jpg',
+        'bgStyle' => 'background-color: #d9dade;',
         'size' => 3,
-        'bgPosition' => 'bg-right-top',
-        'color' => 'text-white',
+        'bgPosition' => 'bg-left-bottom',
+        'color' => 'text-blue-primary',
+        'self' => 'self-end',
         'resize' => true,
+        'reverse' => true,
     ])
 
     @include('partials.image-container', [
@@ -38,7 +40,7 @@
             'NIPS es una prueba de detección ordenada por su proveedor de atención médica y no requiere nada más que una extracción de sangre regular. Esta prueba no tiene un mayor riesgo de aborto espontáneo y los resultados generalmente están disponibles de 5 a 7 días después de que su muestra llega al laboratorio de '.env('APP_NAME').' en San Francisco.',
             '¿Embarazada de gemelos? '.env('APP_NAME').' NIPS se puede realizar tanto en embarazos de feto único como de gemelos*, así como en personas que concibieron mediante FIV, una donante de óvulos o aquellas que utilizan una portadora gestacional.'
         ],
-        'image' => '/images/26-chantelle-6313-1_3x.webp',
+        'image' => '/images/COMO-FUNCIONA.png',
         'reverse' => true
     ])
 

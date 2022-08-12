@@ -1,8 +1,8 @@
 <div class="grid grid-cols-4">
     @php
         $networks = [
-            'twitter' => 'https://twitter.com/',
-            'linkedin' => 'http://www.linkedin.com/company/',
+            //'twitter' => 'https://twitter.com/',
+            //'linkedin' => 'http://www.linkedin.com/company/',
             'facebook' => 'https://www.facebook.com/',
             'instagram' => 'https://www.instagram.com/'
          ];

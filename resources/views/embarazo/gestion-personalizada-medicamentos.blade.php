@@ -15,7 +15,7 @@
     @include('partials.image-container', [
         'title' => 'Aproximadamente el 99% de las personas tienen variaciones genéticas que pueden hacer que no puedan procesar ciertos medicamentos de la manera prevista.',
         'title_size' => 'text-3xl',
-        'image' => '/images/27_Jasmine_Tiffany_Jaylee_6575_withblob_3x.webp'
+        'image' => '/images/99_.png'
     ])
 
     <div class="w-full bg-gray-100">
@@ -30,7 +30,7 @@
     @include('partials.image-container', [
         'title' => 'Aproveche al máximo sus medicamentos y ayude a reducir los efectos secundarios',
         'items' => ['Su proveedor de pedidos recibirá un informe completo que contiene los resultados de su laboratorio genético junto con un informe de prescripción personalizado que verifica sus medicamentos actuales en busca de posibles interacciones fármaco-fármaco, fármaco-gen o fármaco-fármaco-gen.'],
-        'image' => '/images/Photo-1_3x.webp'
+        'image' => '/images/APROVECHE.png'
     ])
 
     @php

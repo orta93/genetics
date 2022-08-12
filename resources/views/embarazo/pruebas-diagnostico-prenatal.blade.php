@@ -29,18 +29,18 @@
         ];
     @endphp
 
-    {{--<div class="container py-8">
+    <div class="container py-8">
         @include('partials.steps', ['steps' => $steps])
-    </div>--}}
+    </div>
 
     @include('partials.landing', [
         'title' => 'El Colegio Estadounidense de Obstetras y Ginecólogos (ACOG, por sus siglas en inglés) recomienda que a todas las mujeres, independientemente de su edad, se les ofrezcan exámenes de detección y/o pruebas de diagnóstico para detectar afecciones cromosómicas durante el embarazo.',
-        'image' => '/images/37_May_9582_5x.webp',
-        'bg' => 'bg-blue-landing',
+        'image' => '/images/EL-COLEGIO.jpg',
+        'bgStyle' => 'background-color: #e0e0e2;',
         'size' => 3,
-        'bgPosition' => 'bg-left-top',
+        'bgPosition' => 'bg-left-bottom',
         'self' => 'self-end',
-        'color' => 'text-white',
+        'color' => 'text-blue-primary',
         'resize' => true,
     ])
 
@@ -97,7 +97,7 @@
 
     @include('partials.image-container', [
         'title' => 'No tienes que resolverlo solo',
-        'image' => '/images/16-ricarda-talia-lupe-3089-1_3x.webp',
+        'image' => '/images/NO-TIENES-QUE.png',
         'items' => [
             'Los expertos en genética de '.env('APP_NAME').' están disponibles para guiarlo a través del proceso de prueba, ayudarlo a comprender sus resultados y planificar el camino a seguir.'
         ]

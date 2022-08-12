@@ -21,19 +21,19 @@
         $options = [
             [
                 'title' => 'Cribado de portadores',
-                'icon' => 'icons-120-px-outline-dsm-family-2-o-m-green.svg',
+                'icon' => 'CRIBADO.png',
                 'description' => 'Determina su riesgo de transmitir una afección genética a su hijo, incluso si usted mismo no tiene la afección.',
                 'link' => route('cribado-de-portadores')
             ],
             [
                 'title' => 'Pruebas genéticas preimplantacionales',
-                'icon' => 'icons-120-px-outline-dsm-sample-collection-repro-o-m-yellow.svg',
+                'icon' => 'P.GENETICA.png',
                 'description' => 'Puede mejorar sus posibilidades de un embarazo saludable al identificar los embriones más adecuados2 durante la fertilización in vitro (FIV).',
                 'link' => route('prueba-preimplantacion-fiv')
             ],
             [
                 'title' => 'Gestión personalizada de medicamentos',
-                'icon' => 'Size_80px.svg',
+                'icon' => 'GESTION.png',
                 'description' => 'Ayuda a su médico a identificar los medicamentos y las dosis seguros y efectivos para su cuerpo único, incluidos los medicamentos para el control del dolor, la salud mental y muchas otras afecciones.',
                 'link' => route('gestion-personalizada-medicamentos')
             ]
@@ -55,19 +55,19 @@
         $tests = [
             [
                 'title' => 'Cribado de portadores',
-                'icon' => 'icons-120-px-outline-dsm-family-2-o-m-green.svg',
+                'icon' => 'CRIBADO.png',
                 'description' => 'Determina su riesgo de transmitir una afección genética a su hijo, incluso si usted mismo no tiene la afección.',
                 'link' => route('cribado-de-portadores')
             ],
             [
                 'title' => 'Cribado prenatal no invasivo',
-                'icon' => 'icons-120-px-outline-dsm-prenatal-o-m-yellow.svg',
+                'icon' => 'PRENATAL-NO-INVASIVO.png',
                 'description' => 'Predice el sexo de su bebé y descubre su riesgo de ciertos trastornos genéticos, tan pronto como a las 10 semanas.',
                 'link' => route('cribado-prenatal-no-invasivo')
             ],
             [
                 'title' => 'Pruebas de diagnóstico prenatal',
-                'icon' => 'icons-120-px-outline-dsm-pregnancy-o-m-two-color.svg',
+                'icon' => 'PRENATAL.png',
                 'description' => 'Le da respuestas definitivas sobre una condición sospechosa para que pueda estar preparado para lo que está por venir.',
                 'link' => route('pruebas-diagnostico-prenatal')
             ]

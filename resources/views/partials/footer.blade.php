@@ -1,5 +1,6 @@
+@if(env('WHATSAPP_NUMBER'))
 <div style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 99999999;">
-    <a href="https://web.whatsapp.com/send?phone=5218123528633&text=" target="_blank">
+    <a href="https://web.whatsapp.com/send?phone={{ env('WHATSAPP_NUMBER') }}&text=" target="_blank">
         <div>
             <div style="display:flex;justify-content: center;align-items: center;background-color:#e4e4e4;color:#222222;padding:0 12px;border-radius:25px;font-size:13px;line-height:32px;">
                 <span style="margin:0 8px 0 -12px;;order:0;">
@@ -20,6 +21,7 @@
         </div>
     </a>
 </div>
+@endif
 
 <div class="w-full bg-blue-primary text-white">
     <div class="container py-16">
@@ -54,7 +56,7 @@
             </div>
         </div>
 
-        <div class="flex w-full md:hidden my-8">
+        <div class="flex w-full my-8">
             @include('partials.networks')
         </div>
 
