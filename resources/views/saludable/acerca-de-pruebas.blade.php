@@ -13,25 +13,25 @@
         $options = [
             [
                 'title' => env('APP_NAME').' Detección de Cáncer',
-                'icon' => 'BOX_KIT_BG.PNG',
+                'icon' => 'BOX_KIT_BG.png',
                 'bgColor' => 'bg-green-300',
                 'description' => 'Analiza 61 genes asociados con cánceres comunes, incluidos el cáncer de mama, ovario y próstata.'
             ],
             [
                 'title' => env('APP_NAME').' Cardio Screening',
-                'icon' => 'BOX_KIT_BG.PNG',
+                'icon' => 'BOX_KIT_BG.png',
                 'bgColor' => 'bg-pink-900',
                 'description' => 'Analiza más de 75 genes asociados con formas genéticas de enfermedad cardíaca, incluido el agrandamiento del corazón, el ritmo cardíaco anormal y el colesterol alto.'
             ],
             [
                 'title' => 'Examen de salud genética de '.env('APP_NAME'),
-                'icon' => 'BOX_KIT_BG.PNG',
+                'icon' => 'BOX_KIT_BG.png',
                 'bgColor' => 'bg-indigo-500',
                 'description' => 'Analiza hasta 147 genes, incluidos todos los genes en las pruebas de detección de cáncer y cardio, así como algunas afecciones hereditarias procesables.'
             ],
             [
                 'title' => 'Panel de Farmacogenómica de '.env('APP_NAME'),
-                'icon' => 'BOX_KIT_BG.PNG',
+                'icon' => 'BOX_KIT_BG.png',
                 'bgColor' => 'bg-green-800',
                 'description' => 'Pruebe 38 genes para evaluar cómo sus genes afectan su respuesta a los medicamentos.'
             ]
