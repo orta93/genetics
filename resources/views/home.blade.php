@@ -3,7 +3,7 @@
 @section('content')
     @include('partials.landing', [
         'title' => 'Tu salud comienza en tus genes.',
-        'subtitle' => env('APP_NAME').' facilita el acceso a su información genética única, para que pueda tomar el control de su salud.',
+        'subtitle' => 'Prevé y detecta oportunamente cualquier sospecha de enfermedades hereditarias y vulnerabilidades de tu salud a través de las pruebas genéticas',
         'image' => '/images/BANNER_PRINCIPAL_.jpg',
         'link' => route('catalogo'),
         'color' => 'text-black md:text-white',
@@ -22,11 +22,11 @@
             [
                 'title' => 'Wellness',
                 'icon' => 'WELLNESS.png',
-                'description' => 'Obtenga lo que necesita para desarrollar un plan de salud personalizado para enfermedades cardíacas, cáncer y más.',
+                'description' => 'Mejora tu rendimiento físico y mental, descubriendo el tipo de alimentación más adecuada para tu organismo',
                 'link' => route('saludable')
             ],
             [
-                'title' => 'Cancer',
+                'title' => 'Cáncer',
                 'icon' => 'CANCER.png',
                 'description' => 'Comprenda sus genes para que usted y su médico puedan encontrar los tratamientos más efectivos.',
                 'link' => route('cancer')
@@ -52,32 +52,32 @@
         <vue-carousel type="cards" :items='@json($plans)'/>
     </div>
 
-    @php $patients = 2000000; @endphp
+    @php $patients = 150; @endphp
     <div class="w-full py-16 bg-blue-primary text-white">
         <div class="container text-center flex flex-col gap-4 font-bold">
             <p class="uppercase text-xl">Más de</p>
             <counter :value="{{ $patients }}" class="font-bold text-5xl"></counter>
-            <p class="text-xl">pacientes y provedores</p>
+            <p class="text-xl">paneles genéticos que facilitan información a especialistas para el diagnóstico y tratamiento oportuno de enfermedades</p>
         </div>
     </div>
 
     @php
         $mouse_options = [
             [
-                'title' => 'Los expertos en pruebas confían',
-                'content' => [env('APP_NAME').' cuenta con la confianza de médicos de todo el mundo. Nuestros laboratorios están equipados con tecnología de punta y cuentan con algunos de los mejores expertos en genética del mundo.'],
+                'title' => 'Los especialistas aprueban',
+                'content' => [env('APP_NAME').' cuenta con una amplia red de médicos especialistas que estarán a tu disposición para seguimiento posterior de tu detección genética.'],
             ],
             [
                 'title' => 'Precios asequibles',
-                'content' => ['Para muchas personas, el seguro cubre el costo de las pruebas. '.env('APP_NAME').' también ofrece precios fijos de pago por cuenta propia e incluso asistencia financiera para aquellos que califiquen.'],
+                'content' => ['Contamos con los mejores precios del mercado y planes de financiamiento, desde 3 a 36 meses.'],
             ],
-            [
+            /*[
                 'title' => 'Más que una prueba',
                 'content' => ['Los resultados genéticos a menudo son solo el comienzo. El portal educativo interactivo de '.env('APP_NAME').' y los atentos asesores genéticos pueden ayudarlo a comprender sus resultados y qué hacer a continuación.'],
-            ],
+            ],*/
             [
                 'title' => 'Usted tiene el control',
-                'content' => ['En '.env('APP_NAME').', respetamos tu privacidad. Usted posee y controla su información genética, y le brindamos las herramientas para protegerla.'],
+                'content' => ['En '.env('APP_NAME').' aseguramos la privacidad de tu información,Damos cumplimiento a la ley Federal de protección de datos personales.'],
             ]
         ];
     @endphp
